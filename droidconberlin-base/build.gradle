@@ -1,0 +1,39 @@
+import info.metadude.kotlin.library.droidconberlin.Libs
+
+apply plugin: "java-library"
+apply plugin: "kotlin"
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
+
+dependencies {
+    compile Libs.kotlinStdlib
+    compile Libs.moshi
+    compile Libs.okhttp
+    compile Libs.okhttpLoggingInterceptor
+    compile Libs.retrofit
+    compile Libs.retrofitMoshi
+    api Libs.threetenbp
+
+    testCompile Libs.assertjCore
+    testCompile Libs.junitJupiterApi
+    testRuntime Libs.junitJupiterEngine
+    testCompile Libs.kotlinCoroutinesRetrofit
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "failed", "passed", "skipped"
+    }
+}
+
+apply from: rootProject.file("gradle/deploy.gradle")

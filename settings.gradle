@@ -1,0 +1,3 @@
+rootProject.name = 'droidconberlin-base'
+
+include "buildSrc", ":droidconberlin-base"
