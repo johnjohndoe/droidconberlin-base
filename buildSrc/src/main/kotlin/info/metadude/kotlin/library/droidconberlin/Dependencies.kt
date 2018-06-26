@@ -4,7 +4,7 @@ package info.metadude.kotlin.library.droidconberlin
 
 object Versions {
     val assertjCore = "3.10.0"
-    val gradleBintray = "1.8.2"
+    val gradleBintray = "1.8.3"
     val gradleVersions = "0.20.0"
     val junitJupiter = "5.2.0"
     val kotlin = "1.2.50"
