@@ -51,6 +51,10 @@ Run the following command to execute all tests:
 $ ./gradlew clean test
 ```
 
+## Which applications are using this library?
+
+* Droidcon Berlin 2018 Schedule - [Google Play][droidcon-berlin-2018-schedule-google-play]
+
 ## Author
 
 * [Tobias Preuss][tobias-preuss]
@@ -72,5 +76,6 @@ $ ./gradlew clean test
     limitations under the License.
 
 
+[droidcon-berlin-2018-schedule-google-play]: https://play.google.com/store/apps/details?id=info.metadude.android.droidconberlin.schedule
 [jitpack-droidconberlin-base]: https://jitpack.io/#johnjohndoe/droidconberlin-base
 [tobias-preuss]: https://github.com/johnjohndoe
